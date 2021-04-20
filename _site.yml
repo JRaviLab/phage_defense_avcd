@@ -1,4 +1,5 @@
 name: "DcdV"
+output_dir: "."
 navbar:
   title: "A Broadly Conserved Deoxycytidine Deaminase Protects Bacteria from Phage Infection"
   left:
