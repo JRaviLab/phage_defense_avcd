@@ -1,7 +1,7 @@
 # A Broadly Conserved Deoxycytidine Deaminase Protects Bacteria from Phage Infection
 
 
-Geoffrey B. Severin<sup>1#@</sup>, Brian Y. Hsueh<sup>2#</sup>, Clinton A. Elg<sup>3</sup>, John A. Dover<sup>1</sup>, Christopher R. Rhoades<sup>2</sup>, Alex J. Wessel<sup>2, Benjamin J. Ridenhour<sup>4, Eva M. Top<sup>3</sup>, Janani Ravi<sup>5</sup>, Kristin N. Parent<sup>1</sup>, and Christopher M. Waters<sup>2*</sup>
+Geoffrey B. Severin<sup>1#@</sup>, Brian Y. Hsueh<sup>2#</sup>, Clinton A. Elg<sup>3</sup>, John A. Dover<sup>1</sup>, Christopher R. Rhoades<sup>2</sup>, Alex J. Wessel<sup>2</sup>, Benjamin J. Ridenhour<sup>4</sup>, Eva M. Top<sup>3</sup>, Janani Ravi<sup>5</sup>, Kristin N. Parent<sup>1</sup>, and Christopher M. Waters<sup>2*</sup>
 
 <sup>1</sup>Department of Biochemistry and Molecular Biology, Michigan State University, East Lansing,
 Michigan, USA, 48824.
