@@ -1,0 +1,19 @@
+name: "DcdV"
+navbar:
+  title: "A Broadly Conserved Deoxycytidine Deaminase Protects Bacteria from Phage Infection"
+  left:
+    - text: "Data"
+      href: index.html
+      icon: fa-table
+    - text: "Cite"
+      href: cite.html
+      icon: fa-print
+  right:
+    - icon: fab fa-github
+      href: "https://github.com/jravilab/phage_defense_dcdv"
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    include:
+      after_body: footer.html

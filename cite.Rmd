@@ -1,0 +1,53 @@
+---
+title: "Cite"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(fontawesome)
+```
+
+## **A Broadly Conserved Deoxycytidine Deaminase Protects Bacteria from Phage Infection** 
+
+**Geoffrey B. Severin^1\#\@^, Brian Y. Hsueh^2\#^, Clinton A. Elg^3^, John A. Dover^1^, Christopher R.
+Rhoades^2^, Alex J. Wessel^2^, Benjamin J. Ridenhour^4^, Eva M. Top^3^, Janani Ravi^5^, Kristin N.
+Parent^1^, and Christopher M. Waters^2\*^**
+
+^1^Department of Biochemistry and Molecular Biology, Michigan State University, East Lansing,
+Michigan, USA, 48824.
+^2^Department of Microbiology and Molecular Genetics, Michigan State University, East Lansing,
+Michigan, USA, 48824.
+^3^Department of Biological Sciences, Institute for Bioinformatics and Evolutionary Studies,
+Bioinformatics and Computational Biology Program, University of Idaho, Moscow, Idaho, USA,
+83844.
+^4^Department of Mathematics and Statistical Sciences, University of Idaho, Moscow, Idaho, USA,
+83844.
+^5^Department of Pathobiology and Diagnostic Investigation, Michigan State University, East
+Lansing, Michigan, USA, 48824.\
+^\@^Current address: Department of Microbiology and Immunology, University of Michigan, Ann Arbor, MI, 48109.
+
+^\#^These authors contributed equally to this work.
+
+\***Corresponding Author:** 5180 Biomedical and Physical Sciences, 567 Wilson Road, East Lansing, MI 48824. Telephone: 517-884-5360. E-mail: [watersc3\@msu.edu](mailto:watersc3\@msu.edu)
+
+**Running Title:** *A Broadly Conserved Cytidine Deaminase Protects Bacteria from Phage Infection*
+
+## Abstract
+
+The El Tor biotype of *Vibrio cholerae* is responsible for perpetuating the longest cholera pandemic in recorded history (1961-current). The genomic islands VSP-1 and -2 are two understudied genetic features that distinguish El Tor from previous pandemics. To understand their utility, we calculated the co-occurrence of VSP genes across bacterial genomes. This analysis predicted the previously uncharacterized *vc0175*, herein renamed **d**eoxycytidylate **d**eaminase **V**ibrio (*dcdV*), is in a gene network with *dncV*, a cyclic GMP-AMP synthase involved in phage defense. DcdV consists of two domains, a P-loop kinase and a deoxycytidylate deaminase, that are required for the deamination of dCTP and dCMP, inhibiting phage predation by corrupting cellular nucleotide concentrations. Additionally, DcdV is post-translationally inhibited by a unique noncoding RNA encoded 5' of the *dcdV* locus. DcdV homologs are conserved in bacteria and eukaryotes and our results identify *V. cholerae* DcdV as the founding member of a previously undescribed bacterial phage defense system.
+
+## Keywords
+
+cytidine deaminase, phage, genomic island, toxin-antitoxin, thymineless death, APOBEC
+
+------------------------------------------------------------------------
+
+## Citation
+
+A Broadly Conserved Deoxycytidine Deaminase Protects Bacteria from Phage Infection
+
+Geoffrey B. Severin, Brian Y. Hsueh, Clinton A. Elg, John A. Dover, Christopher R.Rhoades, Alex J. Wessel, Benjamin J. Ridenhour, Eva M. Top, Janani Ravi, Kristin N.Parent, Christopher M. Waters.
+
+*bioRxiv* 2021.03.31.437871; doi: <https://doi.org/10.1101/2021.03.31.437871>
+
+`r fa("print", fill = "darkred")` [PDF](<https://www.biorxiv.org/content/10.1101/2021.03.31.437871v1.full.pdf>)

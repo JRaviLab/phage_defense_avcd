@@ -1,0 +1,84 @@
+---
+title: "DcdV Homologs"
+---
+
+```{r setup, eval=TRUE, echo=FALSE, include=FALSE, warning=FALSE}
+library(tidyverse)
+library(here)
+# library(shiny); library(shinydashboard); library(flexdashboard)
+library(DT)
+library(fontawesome)
+```
+
+# A Broadly Conserved Deoxycytidine Deaminase Protects Bacteria from Phage Infection
+`r fa("quote-left", fill = "darkred")` [How to Cite](cite.html) <br>
+
+***
+
+## Explore the DcdV homologs and their descriptions below
+You can search, sort, and query the table interactively.
+In addition, you can show/hide specific columns using the `Column visibility` button.
+
+```{r load_data, eval=TRUE, echo=FALSE, include=FALSE, warning=FALSE}
+infile_blast <- here("../molevol_data/project_data/phage_defense/full_analysis_20210108/cln_combined_uniq.tsv")
+blast_combnd <- read_tsv(infile_blast, col_names=T) %>%
+  mutate(QueryName=Query)
+blast_combnd$Query <- blast_combnd %>%
+  pull(QueryName) %>%
+  str_replace_all(pattern = "WP_001901328.1",
+                  replacement = "Vcholerae") %>% #Vcholerae_WP_001901328.1
+  str_replace_all(pattern = "WP_020839904.1",
+                  replacement = "Vparahaemolyticus") %>% #Vparahaemolyticus_WP_020839904.1
+  str_replace_all(pattern = "WP_096882215.1",
+                  replacement = "Ecoli") %>% #Ecoli_WP_096882215.1
+  str_replace_all(pattern = "WP_108717204.1",
+                  replacement = "Pmirabilis") %>% #Pmirabilis_WP_108717204.1
+  str_replace_all(pattern = "WP_043825948.1",
+                  replacement = "Averonii") %>% #Averonii_WP_043825948.1
+  str_replace_all(pattern = "WP_129996984.1",
+                  replacement = "Ecloacae") #Ecloacae_WP_129996984.1
+```
+
+```{r table, eval=TRUE, echo=FALSE, warning=FALSE}
+
+# selectInput("QueryName", "Query:",
+#             c("V. cholerae"="Vcholerae_WP_001901328.1",
+#               "V. parahaemolyticus"="Vparahaemolyticus_WP_020839904.1",
+#               "E. coli"="Ecoli_WP_096882215.1",
+#               "P. mirabilis"="WP_108717204.1_Proteus_mirabilis",
+#               "A. veronii"="Averonii_WP_043825948.1",
+#               "E. cloacae"="Ecloacae_WP_129996984.1"))
+
+blast_combnd <- blast_combnd %>%
+  select(Name, Lineage, Species,
+  			 Query, PcPositive, AccNum, ProteinName,
+         DomArch.Gene3D, DomArch.Pfam,
+         DomArch.PANTHER, DomArch.Phobius) %>%
+	arrange(-PcPositive, Name) %>%
+	filter(!is.na(Species)) %>% filter(!is.na(Lineage))
+  
+# blast_combnd %>%
+# 	filter(QueryName==input$QueryName) %>%
+# 	rmarkdown::paged_table()
+
+DT::datatable(blast_combnd, extensions = c('Buttons', 'FixedColumns', 'RowReorder'),
+							options = list(
+	pageLength = 10,
+	dom = 'Bfrtip',
+	#buttons = I('colvis'),
+	buttons=list(list(extend = 'colvis', columns = c(3:11))),
+	fixedColumns = list(leftColumns = 2), #, rightColumns = 1),
+	rowReorder = TRUE, order = list(c(0, 'asc')),
+	scrollX = TRUE,
+	lengthMenu = c(10, 25, 100)
+))
+
+
+# output$blast <- DT::renderDataTable(({
+#   DT::datatable(blast_combnd, filter='top',
+#                 options = list(orderClasses = TRUE, autoWidth=T))
+# }))
+# 
+# DT::dataTableOutput("blast", height=1000, width=800)
+
+```
