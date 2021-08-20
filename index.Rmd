@@ -1,5 +1,5 @@
 ---
-title: "DcdV Homologs"
+title: "AvcD Homologs"
 ---
 
 ```{r setup, eval=TRUE, echo=FALSE, include=FALSE, warning=FALSE}
@@ -15,7 +15,7 @@ library(fontawesome)
 
 ***
 
-## Explore the DcdV homologs and their descriptions below
+## Explore the AvcD homologs and their descriptions below
 You can search, sort, and query the table interactively.
 In addition, you can show/hide specific columns using the `Column visibility` button.
 
@@ -56,7 +56,7 @@ blast_combnd <- blast_combnd %>%
          DomArch.PANTHER, DomArch.Phobius) %>%
 	arrange(-PcPositive, Name) %>%
 	filter(!is.na(Species)) %>% filter(!is.na(Lineage))
-  
+
 # blast_combnd %>%
 # 	filter(QueryName==input$QueryName) %>%
 # 	rmarkdown::paged_table()
@@ -78,7 +78,7 @@ DT::datatable(blast_combnd, extensions = c('Buttons', 'FixedColumns', 'RowReorde
 #   DT::datatable(blast_combnd, filter='top',
 #                 options = list(orderClasses = TRUE, autoWidth=T))
 # }))
-# 
+#
 # DT::dataTableOutput("blast", height=1000, width=800)
 
 ```
